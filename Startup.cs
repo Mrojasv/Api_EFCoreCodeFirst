@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using EFCoreCodeFirstSample.Models;
+using EFCoreCodeFirstSample.Models.DataManager;
+using EFCoreCodeFirstSample.Models.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -27,6 +29,7 @@ namespace EFCoreCodeFirstSample
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<EmployeeContext>(opts => opts.UseSqlServer(Configuration["ConnectionString:EmployeeDB"]));
+            services.AddScoped<IDataRepository<Employee>, EmployeeManager>();
             services.AddControllers();
         }
 

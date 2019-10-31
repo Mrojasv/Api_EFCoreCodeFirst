@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\ProofConcept\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample.csproj": {}
+    "H:\\ProofConcept\\Api_EFCoreCodeFirst\\EFCoreCodeFirstSample.csproj": {}
   },
   "projects": {
-    "H:\\ProofConcept\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample.csproj": {
+    "H:\\ProofConcept\\Api_EFCoreCodeFirst\\EFCoreCodeFirstSample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\ProofConcept\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample.csproj",
+        "projectUniqueName": "H:\\ProofConcept\\Api_EFCoreCodeFirst\\EFCoreCodeFirstSample.csproj",
         "projectName": "EFCoreCodeFirstSample",
-        "projectPath": "H:\\ProofConcept\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample.csproj",
+        "projectPath": "H:\\ProofConcept\\Api_EFCoreCodeFirst\\EFCoreCodeFirstSample.csproj",
         "packagesPath": "C:\\Users\\mrojas\\.nuget\\packages\\",
-        "outputPath": "H:\\ProofConcept\\EFCoreCodeFirstSample\\obj\\",
+        "outputPath": "H:\\ProofConcept\\Api_EFCoreCodeFirst\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mrojas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -49,6 +49,14 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.0.0, )"
             }

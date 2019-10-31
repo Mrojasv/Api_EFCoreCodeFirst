@@ -44,6 +44,26 @@ namespace EFCoreCodeFirstSample.Migrations
                     b.HasKey("EmployeeId");
 
                     b.ToTable("Employees");
+
+                    b.HasData(
+                        new
+                        {
+                            EmployeeId = 1L,
+                            DateOfBirth = new DateTime(1979, 4, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "uncle.bob@gmail.com",
+                            FirstName = "Uncle",
+                            LastName = "Bob",
+                            PhoneNumber = "999-888-7777"
+                        },
+                        new
+                        {
+                            EmployeeId = 2L,
+                            DateOfBirth = new DateTime(1981, 7, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "jan.kirsten@gmail.com",
+                            FirstName = "Jan",
+                            LastName = "Kirsten",
+                            PhoneNumber = "111-222-3333"
+                        });
                 });
 #pragma warning restore 612, 618
         }
